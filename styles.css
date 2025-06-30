@@ -2528,24 +2528,494 @@ body::before {
     line-height: 1.5;
 }
 
-/* Responsive para móviles */
+/* ============================
+   ESTILOS PARA REACTION TIME TEST
+   ============================ */
+
+/* Header del Reaction Test */
+.reaction-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.reaction-header h2 {
+    font-size: 2.5em;
+    background: linear-gradient(135deg, #ff6b6b, #feca57);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.reaction-header p {
+    color: #b3c6ff;
+    font-size: 1.1em;
+}
+
+/* Niveles de Reacción */
+.reaction-levels-showcase {
+    margin-bottom: 3rem;
+}
+
+.reaction-levels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.reaction-level-card {
+    background: linear-gradient(135deg, #1a1f3a, #2a2f4a);
+    border: 2px solid;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.reaction-level-card.tortuga { 
+    border-color: #6c757d; 
+}
+
+.reaction-level-card.casual { 
+    border-color: #17a2b8; 
+}
+
+.reaction-level-card.bueno { 
+    border-color: #28a745; 
+}
+
+.reaction-level-card.rapido { 
+    border-color: #ffc107; 
+}
+
+.reaction-level-card.profesional { 
+    border-color: #fd7e14; 
+}
+
+.reaction-level-card.elite { 
+    border-color: #dc3545; 
+}
+
+.reaction-level-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+}
+
+.reaction-level-card .level-indicator {
+    color: #90a4ae;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.reaction-level-card .level-icon {
+    font-size: 2em;
+    margin: 0.5rem 0;
+}
+
+.reaction-level-card .level-name {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.reaction-level-card .level-range {
+    color: #b3c6ff;
+    font-size: 0.9em;
+}
+
+/* Test Interface */
+.reaction-test-interface {
+    background: linear-gradient(135deg, #1a1f3a, #2a2f4a);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.reaction-config {
+    margin-bottom: 2rem;
+}
+
+.reaction-config h3 {
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+}
+
+.reaction-config .config-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.reaction-config .config-option {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.reaction-config .config-option label {
+    color: #b3c6ff;
+    font-weight: bold;
+}
+
+.reaction-config .config-option select {
+    background: linear-gradient(135deg, #2a2f4a, #1a1f3a);
+    border: 2px solid #ff6b6b;
+    border-radius: 8px;
+    padding: 0.8rem;
+    color: #fff;
+    font-size: 1em;
+}
+
+/* Área de Test */
+.reaction-test-area {
+    text-align: center;
+}
+
+.reaction-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.reaction-stats .stat-item {
+    background: rgba(255, 107, 107, 0.1);
+    border: 1px solid #ff6b6b;
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 120px;
+}
+
+.reaction-stats .stat-label {
+    color: #b3c6ff;
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.reaction-stats .stat-value {
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.reaction-click-area {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.reaction-box {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 4px solid;
+    user-select: none;
+    position: relative;
+}
+
+.reaction-box.waiting {
+    background: linear-gradient(135deg, #6c757d, #495057);
+    border-color: #6c757d;
+}
+
+.reaction-box.ready {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    border-color: #dc3545;
+    animation: pulse 1s infinite;
+}
+
+.reaction-box.go {
+    background: linear-gradient(135deg, #28a745, #218838);
+    border-color: #28a745;
+    box-shadow: 0 0 30px rgba(40, 167, 69, 0.5);
+}
+
+.reaction-box.too-early {
+    background: linear-gradient(135deg, #ffc107, #e0a800);
+    border-color: #ffc107;
+}
+
+.reaction-content {
+    text-align: center;
+}
+
+.reaction-icon {
+    font-size: 4em;
+    margin-bottom: 1rem;
+}
+
+.reaction-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.reaction-content p {
+    color: #ccc;
+    font-size: 1em;
+}
+
+/* Controles */
+.reaction-controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.reaction-controls .control-btn {
+    background: linear-gradient(135deg, #ff6b6b, #feca57);
+    border: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.reaction-controls .control-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.reaction-controls .control-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Resultados */
+.reaction-results {
+    background: linear-gradient(135deg, #1a1f3a, #2a2f4a);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.reaction-result-card {
+    text-align: center;
+}
+
+.reaction-time-result {
+    margin-bottom: 2rem;
+}
+
+.time-number {
+    font-size: 4em;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff6b6b, #feca57);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.time-label {
+    display: block;
+    color: #b3c6ff;
+    font-size: 1.2em;
+    margin-top: 0.5rem;
+}
+
+.reaction-level-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.level-icon-result {
+    font-size: 3em;
+}
+
+.level-info {
+    text-align: left;
+}
+
+.level-name-result {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.level-desc {
+    color: #b3c6ff;
+}
+
+.reaction-detailed-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.detailed-stat {
+    background: rgba(255, 107, 107, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #ff6b6b;
+}
+
+.detailed-stat span:first-child {
+    color: #b3c6ff;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.detailed-stat span:last-child {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Lista de Tiempos */
+.reaction-times-list h4 {
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+}
+
+.times-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.time-item {
+    background: rgba(255, 107, 107, 0.1);
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.time-item.best {
+    background: rgba(40, 167, 69, 0.2);
+    border: 2px solid #28a745;
+}
+
+.time-item.worst {
+    background: rgba(220, 53, 69, 0.2);
+    border: 2px solid #dc3545;
+}
+
+/* Historial */
+.reaction-history {
+    background: linear-gradient(135deg, #1a1f3a, #2a2f4a);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.reaction-history h3 {
+    color: #ff6b6b;
+    margin-bottom: 1.5rem;
+}
+
+.reaction-history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.reaction-history-item {
+    background: linear-gradient(135deg, #2a2f4a, #1a1f3a);
+    border: 1px solid #ff6b6b;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.reaction-history-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 107, 107, 0.3);
+}
+
+.history-reaction-icon {
+    font-size: 2em;
+    filter: drop-shadow(0 0 8px #ff6b6b);
+}
+
+.history-reaction-details {
+    flex: 1;
+}
+
+.history-reaction-time {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+
+.history-reaction-level {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.history-reaction-stats {
+    color: #b3c6ff;
+    font-size: 0.9em;
+    margin-top: 0.3rem;
+}
+
+.history-reaction-date {
+    color: #90a4ae;
+    font-size: 0.8em;
+}
+
+/* Animaciones */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .affiliate-grid-enhanced {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+    .reaction-box {
+        width: 300px;
+        height: 250px;
     }
     
-    .affiliate-item-enhanced {
-        padding: 1rem;
+    .reaction-stats {
+        gap: 1rem;
     }
     
-    .affiliate-section-enhanced {
-        padding: 2rem 1rem;
-    }
-    
-    .price-info {
+    .reaction-level-result {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 0.3rem;
+        text-align: center;
+    }
+    
+    .reaction-detailed-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .reaction-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .reaction-levels-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
