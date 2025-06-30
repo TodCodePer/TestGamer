@@ -1,0 +1,28 @@
+# ===============================
+# ARCHIVO _redirects para Netlify
+# ===============================
+
+# Redirects para SEO amigable
+/cps-test  /  200
+/aim-trainer  /#aim-trainer  200  
+/reaction-test  /#reaction-test  200
+
+# Redirects 301 para mantener link juice
+/old-page  /  301
+/test  /  301
+
+# Headers personalizados para SEO
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# Cache optimizado
+/js/*
+  Cache-Control: public, max-age=31536000
+/css/*  
+  Cache-Control: public, max-age=31536000
+/images/*
+  Cache-Control: public, max-age=31536000

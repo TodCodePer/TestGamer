@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- Página principal -->
+    <url>
+        <loc>https://cps-test-pro.com/</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- CPS Test - Página principal del test -->
+    <url>
+        <loc>https://cps-test-pro.com/cps-test/</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Aim Trainer -->
+    <url>
+        <loc>https://cps-test-pro.com/aim-trainer/</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Reaction Time Test -->
+    <url>
+        <loc>https://cps-test-pro.com/reaction-test/</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Páginas específicas de entrenamiento -->
+    <url>
+        <loc>https://cps-test-pro.com/aim-trainer/tracking/</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://cps-test-pro.com/aim-trainer/flicking/</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://cps-test-pro.com/aim-trainer/gridshot/</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://cps-test-pro.com/aim-trainer/shooting-range/</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Páginas de contenido SEO -->
+    <url>
+        <loc>https://cps-test-pro.com/how-to-improve-cps/</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://cps-test-pro.com/best-gaming-mouse/</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://cps-test-pro.com/valorant-aim-training/</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://cps-test-pro.com/cs2-aim-improvement/</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Comparativas y reseñas (para afiliados) -->
+    <url>
+        <loc>https://cps-test-pro.com/gaming-mouse-reviews/</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://cps-test-pro.com/mechanical-keyboard-guide/</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+</urlset>

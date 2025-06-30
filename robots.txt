@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Permitir acceso a todos los recursos importantes
+Allow: /js/
+Allow: /css/
+Allow: /images/
+Allow: /manifest.json
+
+# Bloquear archivos innecesarios para SEO
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.log$
+Disallow: /tmp/
+
+# Sitemap
+Sitemap: https://cps-test-pro.com/sitemap.xml
+
+# Crawl-delay para no sobrecargar el servidor
+Crawl-delay: 1
