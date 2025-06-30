@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "netlify-plugin-form-submissions": "^0.1.4"
+  }
+}
