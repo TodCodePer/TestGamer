@@ -14,7 +14,7 @@ Disallow: /*.log$
 Disallow: /tmp/
 
 # Sitemap
-Sitemap: https://tourmaline-starburst-9442b1.netlify.app/sitemap.xml
+Sitemap: https://testsparagamers.netlify.app/sitemap.xml
 
 # Crawl-delay para no sobrecargar el servidor
 Crawl-delay: 1
