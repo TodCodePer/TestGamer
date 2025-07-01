@@ -14,10 +14,13 @@
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
-    
-    <!-- Aim Trainer -->
+      <!-- Guías de Gaming -->
     <url>
-        <loc>https://testsparagamers.netlify.app/aim-trainer/</loc>
+        <loc>https://testsparagamers.netlify.app/guides.html</loc>
+        <lastmod>2025-06-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
         <lastmod>2025-06-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
