@@ -7,9 +7,11 @@
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), payment=(), usb=(), interest-cohort=()
+  X-Robots-Tag: index, follow
 
 /
   Cache-Control: public, max-age=3600
+  X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
 
 /*.css
   Cache-Control: public, max-age=31536000
@@ -38,6 +40,7 @@
 /*.xml
   Cache-Control: public, max-age=86400
   Content-Type: application/xml
+  X-Robots-Tag: index, follow
 
 /*.txt
   Cache-Control: public, max-age=86400

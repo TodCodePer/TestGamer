@@ -6,6 +6,7 @@ Allow: /js/
 Allow: /css/
 Allow: /images/
 Allow: /manifest.json
+Allow: /sitemap.xml
 
 # Bloquear archivos innecesarios para SEO
 Disallow: /admin/
@@ -13,8 +14,11 @@ Disallow: /private/
 Disallow: /*.log$
 Disallow: /tmp/
 
-# Sitemap
+# Sitemap (URL exacta para Netlify)
 Sitemap: https://testsparagamers.netlify.app/sitemap.xml
+
+# Host específico para mejor indexación
+Host: https://testsparagamers.netlify.app
 
 # Crawl-delay para no sobrecargar el servidor
 Crawl-delay: 1
