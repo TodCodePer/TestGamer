@@ -1,0 +1,20 @@
+{
+  "masterPicture": "icon.png",
+  "iconsPath": "/",
+  "design": {
+    "ios": {
+      "pictureAspect": "backgroundAndMargin",
+      "backgroundColor": "#667eea",
+      "margin": "14%"
+    },
+    "androidChrome": {
+      "pictureAspect": "backgroundAndMargin", 
+      "backgroundColor": "#667eea",
+      "margin": "17%"
+    },
+    "windows": {
+      "pictureAspect": "whiteSilhouette",
+      "backgroundColor": "#667eea"
+    }
+  }
+}
